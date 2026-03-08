@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-// Camera icon SVG component
+
 const CameraIcon = () => (
   <svg width="14" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -31,7 +31,7 @@ const AccountSettings = () => {
     navigate("/");
   };
 
-  // Create profile image URL with initials
+
   const getInitialsAvatar = () => {
     if (currentUser?.fullName) {
       return `https://ui-avatars.com/api/?name=${encodeURIComponent(currentUser.fullName)}&background=6C25FF&color=fff&size=128`;
@@ -49,7 +49,7 @@ const AccountSettings = () => {
         flexDirection: "column",
       }}
     >
-      {/* Header */}
+    
       <div
         style={{
           width: "100%",
@@ -88,7 +88,6 @@ const AccountSettings = () => {
         </button>
       </div>
 
-      {/* Profile Section */}
       <div
         style={{
           display: "flex",
@@ -98,7 +97,7 @@ const AccountSettings = () => {
           borderBottom: "1px solid #EFEFEF",
         }}
       >
-        {/* Avatar with camera icon */}
+       
         <div
           style={{
             position: "relative",
@@ -127,7 +126,7 @@ const AccountSettings = () => {
             />
           </div>
 
-          {/* Camera Button */}
+          
           <div
             style={{
               position: "absolute",
@@ -148,7 +147,7 @@ const AccountSettings = () => {
           </div>
         </div>
 
-        {/* Name & Email */}
+    
         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
           <p
             style={{
@@ -174,7 +173,7 @@ const AccountSettings = () => {
         </div>
       </div>
 
-      {/* Bio Section */}
+   
       <div
         style={{
           padding: "20px",

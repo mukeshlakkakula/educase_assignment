@@ -69,7 +69,7 @@ const Landing = () => {
         style={{
           width: "100%",
           height: "46px",
-          background: "#6C25FF4B", // 29% opacity equivalent
+          background: "#6C25FF4B", 
           borderRadius: "6px",
           border: "none",
           fontFamily: "Rubik, sans-serif",
