@@ -2,9 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-
 const CameraIcon = () => (
-  <svg width="14" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg
+    width="14"
+    height="12"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
       d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z"
       stroke="white"
@@ -31,7 +36,6 @@ const AccountSettings = () => {
     navigate("/");
   };
 
-
   const getInitialsAvatar = () => {
     if (currentUser?.fullName) {
       return `https://ui-avatars.com/api/?name=${encodeURIComponent(currentUser.fullName)}&background=6C25FF&color=fff&size=128`;
@@ -49,7 +53,6 @@ const AccountSettings = () => {
         flexDirection: "column",
       }}
     >
-    
       <div
         style={{
           width: "100%",
@@ -93,11 +96,8 @@ const AccountSettings = () => {
           display: "flex",
           gap: "16px",
           padding: "24px 20px",
-          background: "#FFFFFF",
-          borderBottom: "1px solid #EFEFEF",
         }}
       >
-       
         <div
           style={{
             position: "relative",
@@ -126,7 +126,6 @@ const AccountSettings = () => {
             />
           </div>
 
-          
           <div
             style={{
               position: "absolute",
@@ -147,7 +146,6 @@ const AccountSettings = () => {
           </div>
         </div>
 
-    
         <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
           <p
             style={{
@@ -173,11 +171,9 @@ const AccountSettings = () => {
         </div>
       </div>
 
-   
       <div
         style={{
           padding: "20px",
-          background: "#FFFFFF",
         }}
       >
         <p
@@ -193,6 +189,35 @@ const AccountSettings = () => {
           Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam Erat,
           Sed Diam
         </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          minHeight: " 35vh",
+          gap: "20px",
+        }}
+      >
+        <span>
+          <hr
+            style={{
+              border: "1px dashed #EFEFEF",
+              width: "100%",
+              margin: 0,
+            }}
+          />
+        </span>
+
+        <span>
+          <hr
+            style={{
+              border: "1px dashed #EFEFEF",
+              width: "100%",
+              margin: 0,
+            }}
+          />
+        </span>
       </div>
     </div>
   );
